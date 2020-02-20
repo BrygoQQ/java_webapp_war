@@ -58,6 +58,16 @@
     </resources>
     <plugins>
       <plugin>
+          <groupId>org.wildfly.plugins</groupId>
+          <artifactId>wildfly-maven-plugin</artifactId>
+          <version>1.2.2.Final</version>
+          <configuration>
+              <id>wildfly</id>
+              <hostname>10.0.2.7</hostname>
+              <port>9990</port>
+          </configuration>
+			 </plugin>
+      <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
