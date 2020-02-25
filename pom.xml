@@ -47,7 +47,7 @@
         <version>2.3</version>
     </dependency>
   </dependencies>
-<!-- comment 5 -->
+<!-- comment 6 -->
   <build>
     <finalName>java-webapp</finalName>
     <resources>
