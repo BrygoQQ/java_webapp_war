@@ -7,7 +7,27 @@
   <name>java-webapp</name>
   <version>1.2</version>
   <url>http://maven.apache.org</url>
-
+  
+  <settings>
+    <pluginGroups>
+        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+    </pluginGroups>
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <sonar.host.url>
+                  http://sonar
+                </sonar.host.url>
+            </properties>
+        </profile>
+     </profiles>
+  </settings>
+  
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
